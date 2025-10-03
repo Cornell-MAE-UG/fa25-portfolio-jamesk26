@@ -1,74 +1,81 @@
 ---
 layout: default
-title: <Your Name> - Curriculum Vitae
+title: James King - Curriculum Vitae
 permalink: /cv/
 ---
 ## Curriculum Vitae
 
-[Download my CV]({{ "/assets/CV.pdf" | relative_url }}) in PDF format.
+[Download my CV]({{ "/assets/JamesKing_MachanicalEngineer_Resume(2).pdf" | relative_url }}) in PDF format.
 
 
-**Email:** [netID@cornell.edu](mailto:netID@cornell.edu) | | | **Phone:** +123 456 7890
+---
+title: "James King Portfolio"
+---
+
+# James King
+
+**Email:** [james.king.usa2@gmail.com](mailto:james.king.usa2@gmail.com) | **Phone:** +1 315-921-8281 | **LinkedIn:** [linkedin.com/in/jamesk2](https://linkedin.com/in/jamesk2) | British-American dual citizen
 
 ---
 
-#### Objective
-Aspiring engineering student with a strong foundation in.... Passionate about ... and eager to apply my knowledge in real-world applications.
+## Objective
+Aspiring mechanical engineer with strong hands-on experience in CAD, composites, and thermal testing. Passionate about vehicle design, robotics, and sustainable engineering solutions, eager to apply technical and leadership skills in real-world engineering projects.
 
 ---
 
-#### Education
-- **Cornell University**  
-  *Bachelor of Science in Mechanical and Aerospace Engineering*  
-  GPA: 3.8/4.0 | Graduation: Month, Year
+## Education
 
-- **[High School Name]**  
-  *High School Diploma*  
-  Graduation: [Month, Year]
+**Cornell University – Ithaca, NY**  
+*Bachelor of Science in Mechanical Engineering, Minor in Business*  
+Anticipated Graduation: May 2028  
+**Relevant Coursework:** Thermodynamics, Statics, Electromagnetism, Differential Equations, Python for Engineers, Linear Algebra, Mechanical Synthesis, Dynamics  
 
----
-
-#### Skills
-- **Software:** Autodesk Fusion 360, SolidWorks, ANSYS  
-- **Programming:** Python, MATLAB  
-- **Tools:** 3D Printing, Laser Cutting  
+**South Jefferson High School – Adams, NY**  
+*High School Diploma*  
+Memberships: Founder, Rubik’s Cube Club | President, Adams Library Community Club | Co-President, SADD  
 
 ---
 
-#### Projects
-- **[Project Title]**:  
-  *[Short Description]*  
-  - Key Achievement 1  
-  - Key Achievement 2  
+## Skills
 
-- **[Project Title]**:  
-  *[Short Description]*  
-  - Key Achievement 1  
-  - Key Achievement 2  
+- **Software:** Autodesk Fusion 360, SolidWorks, ANSYS, Inventor, OnShape  
+- **Programming:** Python, AI Prompting, MATLAB  
+- **Tools/Techniques:** 3D Printing, Machining (Mill, Lathe, CNC), Laser Cutting, Carbon Fiber Composites, Thermal Testing  
+- **Other:** Technical Documentation, Mechanical Testing  
 
 ---
 
-#### Work Experience
-- **[Company Name] - Intern**  
-  [Month, Year] - [Month, Year]  
-  - Responsibility 1  
-  - Responsibility 2  
+## Engineering Experience / Projects
+
+**Cornell Racing Formula SAE – Ergonomics Subteam / Part Designer** – Ithaca, NY | Nov 2024 – Present  
+
+- Designed 2026 steering wheel with structural optimization; performed three-point bend testing to reduce weight while maintaining stiffness and driver feedback.  
+- Integrated 3D hand scans for ergonomic grips and applied carbon fiber layup techniques.  
+- Conducted thermal conductivity testing on proprietary brake pads to validate material selection.  
+- Collaborated with a 50+ member team in a full design-to-manufacture cycle.  
+
+**Shaw Harbor Holdings – Mechanical Engineering Intern** – Adams, NY | June 2024 – August 2025  
+
+- Co-led design of new enclosure prototypes, creating detailed CAD models to reduce tariff costs and accelerate manufacturing.  
+- Designed CAD laser fixtures, reducing machine downtime by 25%.  
+- Researched NRE rates to recommend a new pricing structure optimizing engineer time.  
+- Evaluated AI tools and presented adoption strategies to executive leadership.  
+- Mentored by CEO, gaining exposure to operational management and business strategy.  
 
 ---
 
-#### Achievements & Certifications
-- [Certification Name], [Issuing Organization], [Year]  
-- [Achievement Name], [Competition/Event], [Year]  
+## Activities
+
+**CORE (Club of Rural Engineers)** – Member / Mentor | Sept 2024 – Present  
+
+- Guide rural students through college opportunities and provide community resources.  
+
+**Engineering Dean’s Advisory Council (EDAC)** – Member | Sept 2025 – Present  
+
+- Undergraduate representative advising on academic policies and student initiatives.  
 
 ---
 
-#### Extracurricular Activities
-- Member of [Club/Organization Name]  
-- Volunteer for [Event/Organization Name]  
+## Interests
 
----
-
-#### References
-Available upon request.
-
----
+Working on a 2013 BMW 335i, Running, Skiing, Drawing, Exploring Adirondack Mountains, GoPro
