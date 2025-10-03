@@ -28,13 +28,20 @@ h1 {
   margin-bottom: 25px;
 }
 
+
 body {
-  font-family: "Open Sans", 'Montserrat', 'Helvetica Neue' sans-serif;
-  line-height: 1.6;
+  font-family: "Open Sans", 'Montserrat', 'Helvetica Neue', sans-serif;
+  line-height: 1.7;
   background-color: $background-color;
   color: $text-color;
   margin: 0;
   padding: 0;
+}
+
+.cv-page {
+  font-weight: 500;
+  font-size: 1.08em;
+  margin-top: 40px;
 }
 
 header, footer {

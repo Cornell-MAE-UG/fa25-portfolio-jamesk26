@@ -1,4 +1,4 @@
-ka---
+---
 layout: project
 title: Mechanism Analysis
 description: Lever mechanism with actuator

@@ -3,20 +3,13 @@ layout: default
 title: James King - Curriculum Vitae
 permalink: /cv/
 ---
-## Curriculum Vitae
 
-[Download my CV]({{ "/assets/JamesKing_MachanicalEngineer_Resume (2).pdf" | relative_url }}) in PDF format.
+[Download my CV]({{ "/assets/JamesKing_MechanicalEngineer_Resume (2).pdf" | relative_url }}) in PDF format.
 
-
----
-title: "James King Portfolio"
----
-
-# James King
+# James King Portfolio
 
 **Email:** [james.king.usa2@gmail.com](mailto:james.king.usa2@gmail.com) | **Phone:** +1 315-921-8281 | **LinkedIn:** [linkedin.com/in/jamesk2](https://linkedin.com/in/jamesk2) | British-American dual citizen
 
----
 
 ## Objective
 Aspiring mechanical engineer with strong hands-on experience in CAD, composites, and thermal testing. Passionate about vehicle design, robotics, and sustainable engineering solutions, eager to apply technical and leadership skills in real-world engineering projects.
