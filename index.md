@@ -6,7 +6,7 @@ title: James King
 ## About Me
 
 
-![Profile Picture]({{ "assets/images/jamesportrait(1).jpg" | relative_url }}){: class="profile-image"}
+![Profile Picture]({{ "/workspaces/fa25-portfolio-jamesk26/assets/images/jamesportrait (1).jpeggit add ." | relative_url }}){: class="profile-image"}
 
  
 My name is {{ site.name }}, and I am a British-American mechanical engineer studying at Cornell University. I was born in England and moved to the U.S. at age 5, an experience that gave me a global perspective and a drive to make an impact wherever I go.
