@@ -3,7 +3,7 @@ layout: project
 title: Mechanism Analysis
 description: Lever mechanism with actuator
 technologies: [MATLAB, python]
-image: "/assets/images/screenshot.png"
+image: /assets/images/screenshot.png
 ---
 
 
