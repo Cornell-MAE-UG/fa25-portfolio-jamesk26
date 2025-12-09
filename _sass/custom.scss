@@ -155,11 +155,10 @@ footer {
 }
 
 .gallery-item {
-  overflow: hidden;
+  overflow: visible;
   text-align: center;
   transition: transform 0.3s ease;
-  max-width: 250px; 
-  max-height: 300px; 
+  max-width: 250px;
 }
 
 .gallery-item img {
