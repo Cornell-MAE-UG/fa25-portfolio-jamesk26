@@ -36,47 +36,39 @@ In thermodynamic terms the turbine extracts specific energy (specific enthalpy \
 
 ## 2. Thermodynamic Principles
 
-### Turbine Work (per unit mass of exhaust gas)
+**Turbine Work**
 
-$$w_{turbine} = h_{in,ex} - h_{out,ex}$$
+For the turbine expanding exhaust gas from inlet to outlet:
 
-Turbine isentropic efficiency:
+$$w_{\text{turbine}} = h_{\text{in}} - h_{\text{out}}$$
 
-$$\eta_t = \frac{h_{in,ex} - h_{out,ex}}{h_{in,ex} - h_{out,ex,s}}$$
+The isentropic (ideal) process sets a baseline; actual turbine has efficiency:
 
-where subscript $s$ denotes the isentropic (ideal) expansion end-state.
+$$\eta_t = \frac{h_{\text{in}} - h_{\text{out}}}{h_{\text{in}} - h_{\text{out,s}}}$$
 
-### Compressor Relations (per unit mass of intake air)
+where the subscript $s$ denotes isentropic outlet state.
 
-Isentropic temperature rise for ideal gas (constant $k$):
+**Compressor Work**
+
+For the compressor compressing intake air, the isentropic temperature rise is:
 
 $$T_{2s} = T_1 \left(\frac{p_2}{p_1}\right)^{(k-1)/k}$$
 
-Actual temperature with isentropic efficiency $\eta_c$:
+Accounting for real irreversibilities via compressor isentropic efficiency $\eta_c$:
 
 $$T_2 = T_1 + \frac{T_{2s} - T_1}{\eta_c}$$
 
-Compressor specific work:
+The specific work required by the compressor:
 
-$$w_{comp} = c_p (T_2 - T_1)$$
+$$w_{\text{comp}} = c_p (T_2 - T_1)$$
 
-### Shaft Power Balance
+**Power Balance on Shaft**
 
-$$\dot{m}_{exh} \; w_{turbine,avail} \; \eta_{mech} = \dot{m}_{air} \; w_{comp} + \dot{W}_{losses}$$
+The turbine produces power and the compressor consumes it. On a steady operating point:
 
-where $\eta_{mech}$ accounts for mechanical losses and $\dot{W}_{losses}$ includes bearing drag and leakage.
+$$\dot{m}_{\text{exh}} \cdot w_{\text{turbine}} \cdot \eta_{\text{mech}} = \dot{m}_{\text{air}} \cdot w_{\text{comp}} + \dot{W}_{\text{losses}}$$
 
-### Practical Relations for Performance Maps
-
-$$\frac{T_{2s}}{T_1} = \left(\frac{p_2}{p_1}\right)^{(k-1)/k}$$
-
-$$w_{comp,ideal} = c_p (T_{2s} - T_1)$$
-
-Corrected mass flow (accounting for inlet conditions):
-
-$$\dot{m}_{corr} = \dot{m} \sqrt{\frac{T_{ref}}{T}} \cdot \frac{p}{p_{ref}}$$
-
-These relations form the basis of compressor and turbine performance mapping and turbo matching.
+Here $\eta_{\text{mech}}$ accounts for mechanical and bearing losses, and $\dot{W}_{\text{losses}}$ includes drag and leakage.
 
 ## 3. Real-World Losses, Efficiency & Exergy
 
@@ -96,32 +88,57 @@ Exergy perspective: irreversible processes (entropy generation) reduce the extra
 
 Several experimental studies report measurable heat transfer in turbine housings and irreversible losses in blade rows. Manufacturer datasheets and compressor/turbine maps provide measured efficiency islands which quantify real performance across flow and pressure-ratio axes.
 
-## 4. Performance Mapping & Operating Behavior
+## 4. Thermodynamic Cycle Representation
 
-Compressor and turbine manufacturers publish maps showing contours of constant isentropic efficiency and operating islands in the corrected mass-flow vs. pressure-ratio (\(PR\), or corrected speed) plane. Key map features:
+**T-S Diagram for Turbine Expansion**
 
-- Surge line (low flow limit) where unstable flow (rotating stall) begins — operation left of the surge line is unsafe and causes performance loss or damage.
-- Choke (high flow limit) where mass flow cannot be increased for a given geometry.
-- Efficiency islands: closed contours showing where the compressor is most efficient.
+The turbine expands hot exhaust gas from high pressure to lower pressure. On a T-S diagram:
 
-Surge and stall: typically caused by excessive pressure rise at low flow; surge control in engines uses wastegates, blow-off valves (recirc), and active control strategies.
+- **Process 1→2s (isentropic):** Vertical line downward (no entropy change)
+- **Process 1→2 (actual):** Sloped line downward and rightward (entropy increases due to irreversibility)
 
-Transient behavior — turbo lag:
+The enthalpy drop from inlet to outlet defines available work:
 
-- Turbo lag is the delay between a driver demand for torque (throttle input) and the pressurization of intake air by the compressor. It is governed by the turbine/compressor inertia, exhaust energy availability, and system piping volumes. Modern strategies (VGT, electronic boost control, twin-scroll manifolds) reduce lag.
+$$w_{\text{available}} = h_1 - h_2$$
+
+Turbine efficiency measures how well this work is captured:
+
+$$\eta_t = \frac{h_1 - h_2}{h_1 - h_{2s}} \quad \text{(typically 0.6–0.8)}$$
+
+**T-S Diagram for Compressor Compression**
+
+The compressor pressurizes cool intake air. On a T-S diagram:
+
+- **Process 1→2s (isentropic):** Vertical line upward (no entropy change, minimum work needed)
+- **Process 1→2 (actual):** Sloped line upward and rightward (entropy increases, more work required)
+
+The work required exceeds the isentropic minimum:
+
+$$w_{\text{comp,actual}} = \frac{w_{\text{comp,ideal}}}{\eta_c} = \frac{h_{2s} - h_1}{\eta_c}$$
+
+Compressor efficiency is typically 0.65–0.85 depending on operating point.
+
+**P-V Representation**
+
+For a perfect gas, the compressor and turbine processes can also be visualized on a P-V (pressure-volume) diagram:
+
+- Compressor: Follows roughly $pV^k = \text{const}$ (isentropic) or $pV^{n} = \text{const}$ with $n < k$ (real process)
+- Turbine: Expands along similar polytropic path from high to low pressure
+
+The area under the curve on a P-V diagram represents the flow work and internal energy changes. Real processes have larger areas (more work input for compression, less work output for expansion) than ideal processes.
 
 ## 5. Figures & Illustrations
 
-Below are simple embedded figures (SVG) illustrating the turbocharger layout, an indicator-style sketch of temperature/pressure changes, and a placeholder compressor map. Replace these with manufacturer maps or device-specific diagrams to support a strong submission.
+The following diagrams illustrate key thermodynamic concepts and the physical turbocharger layout.
 
 ![Turbo schematic]({{ "/assets/images/turbo/schematic.svg" | relative_url }}){: .inline-image }
 *Figure 1 — Turbocharger schematic: exhaust turbine drives the compressor via central shaft.*
 
 ![T–s / P–T sketch]({{ "/assets/images/turbo/pressure_temp.svg" | relative_url }}){: .inline-image }
-*Figure 2 — Qualitative pressure/temperature changes across turbine and compressor.*
+*Figure 2 — T-S diagram showing isentropic (ideal) versus actual expansion in turbine and compression in compressor.*
 
 ![Compressor map placeholder]({{ "/assets/images/turbo/compressor-map.svg" | relative_url }}){: .inline-image }
-*Figure 3 — Placeholder compressor map (replace with manufacturer map for specific model).*
+*Figure 3 — P-V representation of turbocharger processes (placeholder).*
 
 ## 6. References & Citations
 
