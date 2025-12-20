@@ -19,7 +19,7 @@ This project analyzes how a turbocharger works on an internal combustion engine 
 
 ## Thermodynamic Analysis (Concepts and Equations)
 
-- Compressor: relate pressure ratio (PR = p_out / p_in) to ideal (isentropic) outlet temperature:
+- Compressor: relate pressure ratio \(PR = \frac{p_{out}}{p_{in}}\) to ideal (isentropic) outlet temperature:
 
 
 ## 1. Introduction & Basic Operation
