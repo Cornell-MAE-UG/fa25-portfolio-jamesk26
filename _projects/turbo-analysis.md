@@ -143,7 +143,7 @@ $$\dot{m}_{exh} \cdot w_{out} = \dot{m}_{air} \cdot w_{in} + \dot{W}_{losses}$$
 - $\dot{m}_{air}$ = mass flow rate through compressor (kg/s)
 - $\dot{W}_{losses}$ = parasitic mechanical losses: bearings, seals, windage (W)
 
-
+`
 ### Power Requirement
 
 The turbine must produce sufficient power to overcome both compressor work and mechanical losses. This imposes a fundamental constraint on matching: undersized turbines cannot supply required compressor power, while oversized turbines cause excessive turbo lag.
