@@ -32,7 +32,7 @@ Key components and energy transfer:
 - Shaft / Center housing: transfers shaft power from turbine to compressor; includes bearings and seals (mechanical losses occur here).
 - Compressor: consumes shaft power to raise intake air pressure and temperature (increase enthalpy and density).
 
-In thermodynamic terms the turbine extracts specific energy (specific enthalpy h = u + pv for flowing gas) from the exhaust stream. That specific enthalpy drop is partly converted to mechanical shaft work; after accounting for turbine efficiency and mechanical losses, the shaft supplies work to the compressor which increases the enthalpy of the intake air. For a steady operating point, an energy balance equates turbine power (available) to compressor power demand plus losses.
+In thermodynamic terms the turbine extracts specific energy (specific enthalpy \(h = u + pv\) for flowing gas) from the exhaust stream. That specific enthalpy drop is partly converted to mechanical shaft work; after accounting for turbine efficiency and mechanical losses, the shaft supplies work to the compressor which increases the enthalpy of the intake air. For a steady operating point, an energy balance equates turbine power (available) to compressor power demand plus losses.
 
 Sources that explain turbocharger operation in engineering terms:
 
@@ -46,7 +46,7 @@ Apply the First Law (steady-flow energy balance) to control volumes around the t
 
 - Turbine (per unit mass of exhaust gas):
 
-	w_turbine = h_{in,ex} - h_{out,ex} \quad(\text{ideal/isentropic use }h_{out,ex,s})
+	$$w_{turbine} = h_{in,ex} - h_{out,ex} \quad(\text{ideal/isentropic use }h_{out,ex,s})$$
 
 	With turbine isentropic efficiency $\eta_t$ defined as:
 
@@ -112,11 +112,11 @@ Exergy perspective: irreversible processes (entropy generation) reduce the extra
 Representative studies and findings:
 
 - Experimental papers report measurable heat transfer in turbine housings and irreversible losses in blade rows (see References).
-- Manufacturer datasheets and compressor/turbine maps provide measured efficiency islands which quantify real performance across flow/PR axes.
+- Manufacturer datasheets and compressor/turbine maps provide measured efficiency islands which quantify real performance across flow/\(PR\) axes.
 
 ## 4. Performance Mapping & Operating Behavior
 
-Compressor and turbine manufacturers publish maps showing contours of constant isentropic efficiency and operating islands in the corrected mass-flow vs. pressure-ratio (or corrected speed) plane. Key map features:
+Compressor and turbine manufacturers publish maps showing contours of constant isentropic efficiency and operating islands in the corrected mass-flow vs. pressure-ratio (\(PR\), or corrected speed) plane. Key map features:
 
 - Surge line (low flow limit) where unstable flow (rotating stall) begins — operation left of the surge line is unsafe and causes performance loss or damage.
 - Choke (high flow limit) where mass flow cannot be increased for a given geometry.
@@ -143,7 +143,7 @@ Below are simple embedded figures (SVG) illustrating the turbocharger layout, an
 
 ## 6. References & Citations
 
-Below are accessible technical resources and textbooks to cite. For peer-reviewed papers, search SAE and journals for "turbocharger exergy" or "turbocharger efficiency"; if you pick a specific turbo model I can fetch exact datasheets and papers.
+Below are accessible technical resources and textbooks to cite. For peer-reviewed papers, search SAE and journals for "turbocharger exergy" or "turbocharger efficiency".
 
 - "Turbocharger" — Wikipedia. https://en.wikipedia.org/wiki/Turbocharger
 - Garrett Motion — Technical Resources and Papers. https://www.garrettmotion.com/technical-resources/
@@ -151,10 +151,3 @@ Below are accessible technical resources and textbooks to cite. For peer-reviewe
 - Bejan, A., Tsatsaronis, G., Moran, M., "Thermal Design and Optimization" — exergy approaches and irreversibility.
 - HowStuffWorks — "How Turbochargers Work" — accessible engineering overview: https://auto.howstuffworks.com/turbo.htm
 - Manufacturer application notes (examples): BorgWarner, Garrett, Honeywell/Continental technical papers and compressor map datasheets (see manufacturer websites).
-
----
-
-If you'd like, I can now:
-
-- Fetch a specific turbocharger model's compressor map and datasheet and embed it in the page.
-- Run a Python notebook that computes a matched operating point (compressor PR, corrected mass flow, and required turbine power) for a chosen engine operating point and add plots/screenshots to `assets/images/turbo/`.
