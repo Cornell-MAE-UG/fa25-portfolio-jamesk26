@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="320" viewBox="0 0 900 320">
+  <style>text{font-family:Arial, Helvetica, sans-serif;font-size:14px;fill:#222}</style>
+  <rect width="100%" height="100%" fill="#fff"/>
+  <!-- Exhaust inlet -->
+  <path d="M40 160 C120 140 160 120 220 120" stroke="#b33" stroke-width="8" fill="none" />
+  <text x="10" y="150">Exhaust</text>
+  <!-- Turbine -->
+  <circle cx="260" cy="140" r="48" fill="#eee" stroke="#666"/>
+  <text x="236" y="146">Turbine</text>
+  <!-- Shaft -->
+  <rect x="308" y="132" width="220" height="16" fill="#777" />
+  <text x="410" y="150">Shaft</text>
+  <!-- Compressor -->
+  <circle cx="548" cy="140" r="48" fill="#eef" stroke="#666"/>
+  <text x="522" y="146">Compressor</text>
+  <!-- Intake -->
+  <path d="M620 120 C680 120 740 140 820 160" stroke="#228" stroke-width="8" fill="none" />
+  <text x="820" y="150">Intake (boost)</text>
+  <!-- Arrows -->
+  <path d="M100 150 L90 140 L100 130" stroke="#b33" stroke-width="4" fill="none" />
+  <path d="M800 150 L810 140 L800 130" stroke="#228" stroke-width="4" fill="none" />
+  <!-- Labels for energy transfer -->
+  <text x="320" y="100" fill="#000">Mechanical power</text>
+  <line x1="320" y1="104" x2="520" y2="104" stroke="#000" stroke-width="1.2"/>
+  <text x="200" y="100" fill="#000">Exhaust enthalpy</text>
+  <line x1="220" y1="104" x2="260" y2="104" stroke="#000" stroke-width="1.2"/>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="260" viewBox="0 0 700 260">
+  <style>text{font-family:Arial, Helvetica, sans-serif;font-size:12px;fill:#222}</style>
+  <rect width="100%" height="100%" fill="#fff"/>
+  <!-- axes -->
+  <line x1="60" y1="200" x2="640" y2="200" stroke="#444"/>
+  <line x1="60" y1="200" x2="60" y2="40" stroke="#444"/>
+  <text x="60" y="215">Entropy</text>
+  <text x="350" y="230">T (qualitative)</text>
+  <!-- T-s sketch for compressor -->
+  <path d="M120 180 C200 140 260 120 340 100" stroke="#d9534f" stroke-width="3" fill="none"/>
+  <text x="190" y="150" fill="#d9534f">Compressor (T rises)</text>
+  <!-- T-s sketch for turbine -->
+  <path d="M340 100 C400 120 460 140 540 180" stroke="#5bc0de" stroke-width="3" fill="none"/>
+  <text x="420" y="140" fill="#5bc0de">Turbine (T drops)</text>
+  <!-- labels -->
+  <text x="110" y="195" fill="#000">1 (intake)</text>
+  <text x="340" y="95" fill="#000">2 (after compressor)</text>
+  <text x="540" y="185" fill="#000">3 (after turbine)</text>
+</svg>
