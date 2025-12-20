@@ -143,9 +143,6 @@ $$\dot{m}_{exh} \cdot w_{out} = \dot{m}_{air} \cdot w_{in} + \dot{W}_{losses}$$
 - $\dot{m}_{air}$ = mass flow rate through compressor (kg/s)
 - $\dot{W}_{losses}$ = parasitic mechanical losses: bearings, seals, windage (W)
 
-### Mass Flow Difference
-
-Note that $\dot{m}_{exh} > \dot{m}_{air}$ because fuel is injected upstream of the turbine, adding mass to the exhaust stream. Engine breathing efficiency and exhaust valve timing also affect exhaust mass flow. Typical difference: $\dot{m}_{exh} \approx 1.05$–$1.10 \times \dot{m}_{air}$ for gasoline engines.
 
 ### Power Requirement
 
@@ -209,3 +206,8 @@ Real turbochargers operate within narrow performance envelopes defined by surge,
 - BorgWarner Turbocharger Technical Resources. https://www.borgwarner.com/en/products-and-solutions/turbo-technology
 - Garrett Motion Turbocharger Documentation. https://www.garrettmotion.com/technical-resources/
 - SAE International. "Turbocharger Nomenclature and Terminology" (SAE J922_201309).
+
+## Figures
+
+![Turbocharger System]({{ "/assets/images/turbosystem.jpeg" | relative_url }})
+*Figure: Turbocharger system schematic showing energy flow between turbine and compressor.*
