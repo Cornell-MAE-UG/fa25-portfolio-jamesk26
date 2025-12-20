@@ -34,12 +34,6 @@ Key components and energy transfer:
 
 In thermodynamic terms the turbine extracts specific energy (specific enthalpy \(h = u + pv\) for flowing gas) from the exhaust stream. That specific enthalpy drop is partly converted to mechanical shaft work; after accounting for turbine efficiency and mechanical losses, the shaft supplies work to the compressor which increases the enthalpy of the intake air. For a steady operating point, an energy balance equates turbine power (available) to compressor power demand plus losses.
 
-Sources that explain turbocharger operation in engineering terms:
-
-- Wikipedia — "Turbocharger" (summary and links to theory and history): https://en.wikipedia.org/wiki/Turbocharger
-- Garrett Motion — technical resources and tutorials (practical guides, compressor/turbine maps): https://www.garrettmotion.com/technical-resources/
-- Heywood, J.B., "Internal Combustion Engine Fundamentals" — textbook covering forced induction and engine thermodynamics (standard reference).
-
 ## 2. Thermodynamic Principles
 
 Apply the First Law (steady-flow energy balance) to control volumes around the turbine and compressor. For a steady-flow device the specific work extracted or required relates to the change in specific enthalpy (neglecting kinetic/potential terms when small):
@@ -88,11 +82,6 @@ $$\dot{m}_{corr} = \dot{m} \sqrt{\frac{T_{ref}}{T}} \cdot \frac{p}{p_{ref}}$$
 
 These relations are the backbone of compressor and turbine performance maps and matching.
 
-References for energy/exergy analyses:
-
-- Bejan, A., Tsatsaronis, G., Moran, M., "Thermal Design and Optimization" — exergy-based methods and irreversibility analysis.
-- Selected SAE papers and journal articles on exergy analysis and turbocharger performance (see References section).
-
 ## 3. Real-World Losses, Efficiency & Exergy
 
 Why ideal/adiabatic assumptions break down:
@@ -109,10 +98,7 @@ Efficiency ranges seen in practice (typical ballpark values):
 
 Exergy perspective: irreversible processes (entropy generation) reduce the extractable work. Several studies quantify exergy destruction in turbocharged engines, showing significant fractions of available exergy lost in exhaust heat and through irreversibilities in turbine and compressor passage. Intercooling and recuperation strategies can reduce exergy destruction but add complexity and weight.
 
-Representative studies and findings:
-
-- Experimental papers report measurable heat transfer in turbine housings and irreversible losses in blade rows (see References).
-- Manufacturer datasheets and compressor/turbine maps provide measured efficiency islands which quantify real performance across flow/\(PR\) axes.
+Several experimental studies report measurable heat transfer in turbine housings and irreversible losses in blade rows. Manufacturer datasheets and compressor/turbine maps provide measured efficiency islands which quantify real performance across flow and pressure-ratio axes.
 
 ## 4. Performance Mapping & Operating Behavior
 
@@ -142,8 +128,6 @@ Below are simple embedded figures (SVG) illustrating the turbocharger layout, an
 *Figure 3 — Placeholder compressor map (replace with manufacturer map for specific model).*
 
 ## 6. References & Citations
-
-Below are accessible technical resources and textbooks to cite. For peer-reviewed papers, search SAE and journals for "turbocharger exergy" or "turbocharger efficiency".
 
 - "Turbocharger" — Wikipedia. https://en.wikipedia.org/wiki/Turbocharger
 - Garrett Motion — Technical Resources and Papers. https://www.garrettmotion.com/technical-resources/
