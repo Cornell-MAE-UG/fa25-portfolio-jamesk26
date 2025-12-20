@@ -20,6 +20,9 @@ The turbocharger consists of three primary sections:
 
 Energy flows in a closed cycle: exhaust enthalpy $\rightarrow$ turbine power $\rightarrow$ shaft $\rightarrow$ compressor power $\rightarrow$ intake enthalpy. At steady state, available turbine power must exceed compressor power demand plus mechanical losses.
 
+![Turbocharger System Integration]({{ "/assets/images/turbosystem.jpeg" | relative_url }})
+*Figure 1: Turbocharger system integrated into the vehicle, showing exhaust flow through the turbine and pressurized intake air delivery to the engine.*
+
 ## Thermodynamic Modeling Assumptions
 
 The following assumptions enable rigorous analysis:
@@ -128,6 +131,17 @@ $$T_2 = T_1 - \eta_t (T_1 - T_{2s})$$
 **Variables:**
 - $\eta_t$ = isentropic efficiency (typically 0.60–0.80); variable-geometry turbines achieve higher efficiency across a broader flow range.
 
+## Thermodynamic Process Visualization
+
+The compression and expansion processes in the turbocharger can be visualized on a temperature-entropy (T-S) diagram. This diagram illustrates the difference between ideal isentropic processes (vertical lines, no entropy generation) and real processes (sloped lines, entropy increase due to irreversibilities).
+
+**Compressor process:** Starting at low pressure and temperature, the air is compressed along an isentropic path (constant entropy) to reach a higher pressure. In reality, the compression path slopes rightward as entropy increases due to friction, shock losses, and viscous dissipation. The actual outlet temperature is higher than the isentropic ideal, requiring more compressor work input.
+
+**Turbine process:** Exhaust gas enters at high temperature and pressure, expanding to a lower pressure. The isentropic expansion follows a vertical path downward on the T-S diagram. Real turbines produce less work because the actual expansion path slopes rightward, indicating entropy generation and irreversible losses.
+
+![Turbocharger T-S Diagram]({{ "/assets/images/TurboTSdisgram.png" | relative_url }})
+*Figure 2: Temperature-entropy diagram showing isentropic (ideal) versus actual compression and expansion processes in the turbocharger.*
+
 ## Shaft Power Balance
 
 At steady state, the mechanical power produced by the turbine must equal the mechanical power consumed by the compressor plus all losses:
@@ -206,8 +220,3 @@ Real turbochargers operate within narrow performance envelopes defined by surge,
 - BorgWarner Turbocharger Technical Resources. https://www.borgwarner.com/en/products-and-solutions/turbo-technology
 - Garrett Motion Turbocharger Documentation. https://www.garrettmotion.com/technical-resources/
 - SAE International. "Turbocharger Nomenclature and Terminology" (SAE J922_201309).
-
-## Figures
-
-![Turbocharger System]({{ "/assets/images/turbosystem.jpeg" | relative_url }})
-*Figure: Turbocharger system schematic showing energy flow between turbine and compressor.*
