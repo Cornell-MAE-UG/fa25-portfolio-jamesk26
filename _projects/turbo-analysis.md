@@ -36,51 +36,47 @@ In thermodynamic terms the turbine extracts specific energy (specific enthalpy \
 
 ## 2. Thermodynamic Principles
 
-Apply the First Law (steady-flow energy balance) to control volumes around the turbine and compressor. For a steady-flow device the specific work extracted or required relates to the change in specific enthalpy (neglecting kinetic/potential terms when small):
+### Turbine Work (per unit mass of exhaust gas)
 
-- Turbine (per unit mass of exhaust gas):
+$$w_{turbine} = h_{in,ex} - h_{out,ex}$$
 
-	$$w_{turbine} = h_{in,ex} - h_{out,ex} \quad(\text{ideal/isentropic use }h_{out,ex,s})$$
+Turbine isentropic efficiency:
 
-	With turbine isentropic efficiency $\eta_t$ defined as:
+$$\eta_t = \frac{h_{in,ex} - h_{out,ex}}{h_{in,ex} - h_{out,ex,s}}$$
 
-	$$\eta_t = \frac{h_{in,ex} - h_{out,ex}}{h_{in,ex} - h_{out,ex,s}}$$
+where subscript $s$ denotes the isentropic (ideal) expansion end-state.
 
-	where subscript $s$ denotes the isentropic (ideal) expansion end-state at the same outlet pressure.
+### Compressor Relations (per unit mass of intake air)
 
-- Compressor (per unit mass of intake air):
+Isentropic temperature rise for ideal gas (constant $k$):
 
-	For an ideal isentropic compression between pressures $p_1\rightarrow p_2$ for a perfect gas (constant $k$):
+$$T_{2s} = T_1 \left(\frac{p_2}{p_1}\right)^{(k-1)/k}$$
 
-	$$T_{2s} = T_1 \; PR^{(k-1)/k}, \quad PR = \frac{p_2}{p_1}$$
+Actual temperature with isentropic efficiency $\eta_c$:
 
-	With compressor isentropic efficiency $\eta_c$:
+$$T_2 = T_1 + \frac{T_{2s} - T_1}{\eta_c}$$
 
-	$$T_2 = T_1 + \frac{T_{2s} - T_1}{\eta_c}$$
+Compressor specific work:
 
-	Compressor specific work (per unit mass of intake air):
+$$w_{comp} = c_p (T_2 - T_1)$$
 
-	$$w_{comp} = c_p (T_2 - T_1)$$
-
-The shaft power balance (per unit time) then becomes:
+### Shaft Power Balance
 
 $$\dot{m}_{exh} \; w_{turbine,avail} \; \eta_{mech} = \dot{m}_{air} \; w_{comp} + \dot{W}_{losses}$$
 
-where $\eta_{mech}$ accounts for mechanical and bearing transmission losses between turbine and compressor, and $\dot{W}_{losses}$ includes bearing drag, internal leakage, and auxiliary parasitics.
+where $\eta_{mech}$ accounts for mechanical losses and $\dot{W}_{losses}$ includes bearing drag and leakage.
 
-If the turbine and compressor operate on the same shaft, careful attention must be paid to mass-flow rates: $\dot{m}_{exh}$ (exhaust gas) generally differs from $\dot{m}_{air}$ (intake air) because of fuel addition and changes across the engine; the turbine's available energy is based on the exhaust mass flow and enthalpy drop.
-
-Practical forms of the isentropic relations (for ideal gas with constant specific heats):
+### Practical Relations for Performance Maps
 
 $$\frac{T_{2s}}{T_1} = \left(\frac{p_2}{p_1}\right)^{(k-1)/k}$$
 
 $$w_{comp,ideal} = c_p (T_{2s} - T_1)$$
 
-Corrected mass flow and speed (for map interpolation):
+Corrected mass flow (accounting for inlet conditions):
 
 $$\dot{m}_{corr} = \dot{m} \sqrt{\frac{T_{ref}}{T}} \cdot \frac{p}{p_{ref}}$$
 
-These relations are the backbone of compressor and turbine performance maps and matching.
+These relations form the basis of compressor and turbine performance mapping and turbo matching.
 
 ## 3. Real-World Losses, Efficiency & Exergy
 
