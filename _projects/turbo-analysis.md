@@ -3,7 +3,7 @@ layout: project
 title: Turbocharger Analysis
 description: Thermodynamic analysis of turbocharger compression and expansion cycles
 technologies: [MATLAB, Python]
-image: /assets/images/turbo/screenshot.png
+image: /assets/images/TUYRBO.jpeg
 ---
 
 ## Overview
