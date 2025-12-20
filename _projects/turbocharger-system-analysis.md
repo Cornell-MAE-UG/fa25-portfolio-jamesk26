@@ -93,14 +93,14 @@ Shaft Power Balance
 
 At steady state, the turbine and compressor are mechanically coupled, so the shaft power balance is
 
-$$
-\dot{m}{exh} , w{turb} , \eta_{mech} = \dot{m}{air} , w{comp}
-$$
+$$\dot{m}_{exh} \cdot w_{turb} \cdot \eta_{mech} = \dot{m}_{air} \cdot w_{comp}$$
 
-where
-\dot{m}_{exh} is exhaust mass flow rate,
-\dot{m}_{air} is intake air mass flow rate, and
-\eta_{mech} accounts for mechanical losses in the shaft and bearings.
+**Variables:**
+- $\dot{m}_{exh}$ = exhaust mass flow rate (kg/s)
+- $\dot{m}_{air}$ = intake air mass flow rate (kg/s)
+- $\eta_{mech}$ = mechanical efficiency accounting for losses in the shaft and bearings (typically 0.95–0.98)
+
+Note that $\dot{m}_{exh} > \dot{m}_{air}$ because fuel is injected upstream of the turbine, adding mass to the exhaust stream. Typical relationship: $\dot{m}_{exh} \approx 1.05$–$1.10 \times \dot{m}_{air}$ for gasoline engines.
 
 ## Efficiency
 Efficiency plays a central role in determining turbocharger performance and thermal limits. Two efficiencies dominate the thermodynamic analysis: compressor isentropic efficiency and turbine isentropic efficiency.
